@@ -1,120 +1,483 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>GymWear</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .header {
-            display: flex;
-            align-items: center;
-            background-color: #000000;
-            padding: 10px;
-        }
-        
-        .logo {
-            margin-right: 10px;
-            height: 50px;
-        }
-        
-        .topnav {
-            overflow: hidden;
-            background-color: #000000;
-            margin-top: 10px;
-        }
-        
-        .topnav a {
-            float: left;
-            display: block;
-            color: rgb(253, 253, 253);
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-        
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        
-        .topnav a.active {
-            background-color: #2196F3;
-            color: white;
-        }
-        
-        .topnav input[type=text] {
-            float: right;
-            padding: 6px;
-            margin-top: 8px;
-            margin-right: 16px;
-            border: none;
-            font-size: 17px;
-        }
-        
-        @media screen and (max-width: 600px) {
-            .topnav a, .topnav input[type=text] {
-                float: right;
-                display: block;
-                text-align: left;
-                width: 100%;
-                margin: 0;
-                padding: 14px;
-            }
-            
-            .topnav input[type=text] {
-                border: 1px solid #ccc;  
-            }
-        }
-        
-        body {
-            background-color: #ffde59;
-            background-image: linear-gradient(to bottom right, #ffde59, #ff914d);
-            text-align: right;
-        }
-        
-        .button-container {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 30px;
-        }
-        
-        .button {
-            font-style: inherit;
-            background-color: transparent;
-            color: black;
-            padding: 20px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            margin: 10px;
-        }
-        
-        .button:hover {
-            background-color: navy;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-    
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Glide js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="STYLE.CSS" />
+    <title>Gymwear</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <!-- Top Nav -->
+      <div class="top-nav">
+        <div class="container d-flex">
+          <p>faça já o seu pedido</p>
+          <ul class="d-flex">
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Entre em Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="nav-center container d-flex">
+        <a href="/" class="logo"><h1>GYMWEAR</h1></a>
 
-    <script src="js/scripts2">console.log("Welcome!")</script>
+          <ul class="nav-list d-flex">
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="product.html" class="nav-link">Shop</a>
+            </li>
+            <li class="nav-item">
+            <a href="#terms" class="nav-link">Terms</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="icons d-flex">
+            <a href="CADASTRE-SE.HTML" class="icon">
+              <i class="bx bx-user"></i>
+            </a>
+            <div class="icon">
+              <i class="bx bx-search"></i>
+            </div>
+            <div class="icon">
+              <i class="bx bx-heart"></i>
+              <span class="d-flex">0</span>
+            </div>
+            <a href="cart.html" class="icon">
+              <i class="bx bx-cart"></i>
+              <span class="d-flex">0</span>
+            </a>
+          </li>
+          </ul>
 
-    <div class="header">
-        <img class="logo" src="logo.jpg" alt="GymWear Logo">
-        <h1 class="title">GymWear</h1>
+          <div class="icons d-flex">
+            <a href="CADASTRE-SE.HTML" class="icon">
+              <i class="bx bx-user"></i>
+            </a>
+            <div class="icon">
+              <i class="bx bx-search"></i>
+            </div>
+            <div class="icon">
+              <i class="bx bx-heart"></i>
+              <span class="d-flex">0</span>
+            </div>
+            <a href="cart.html" class="icon">
+              <i class="bx bx-cart"></i>
+              <span class="d-flex">0</span>
+            </a>
+          </div>
+
+          <div class="hamburger">
+            <i class="bx bx-menu-alt-left"></i>
+          </div>
+        </div>
+      </div>
+
+    <div class="hero">
+      <div class="glide" id="glide_1">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="center">
+                <div class="left">
+                  <span class="">Moda Fit Primavera</span>
+                  <h1 class="">Nova Coleção</h1>
+                  <p>Tudo para você está aqui</p>
+                  <a href="#" class="hero-btn">Compre agora</a>
+                </div>
+                <div class="right">
+                    <img class="img1" src="./images/hero-1.png" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="center">
+                <div class="left">
+                  <span>A primavera está chegando!</span>
+                  <h1>A COMBINAÇÃO PERFEITA!</h1>
+                  <p>Fique em forma com estilo.</p>
+                  <a href="#" class="hero-btn">Compre agora</a>
+                </div>
+                <div class="right">
+                  <img class="img2" src="./images/hero-2.png" alt="">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+    </header>
 
-    <nav class="topnav">
-        <a class="active" href="#login">Login</a>
-        <a href="#registrar-se">Registrar-se</a>
-        <input type="text" placeholder="Search...">
-    </nav>
+    <!-- Categories Section -->
+    <section class="section category">
+      <div class="cat-center">
+        <div class="cat">
+          <img src="./images/cat3.jpg" alt="" />
+          <div>
+            <p>ROUPAS FEMININAS</p>
+          </div>
+        </div>
+        <div class="cat">
+          <img src="./images/cat2.jpg" alt="" />
+          <div>
+        
+            <p>ROUPAS MASCULINAS</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="button-container">
-        <button class="button" onclick="window.location.href='https://github.com/teenworkout/teenworkout/blob/main/index.html'">Moda Feminina</button>
-        <button class="button" onclick="window.location.href='https://www.acessorios.com.br'">Moda Masculina</button>
-        <button class="button" onclick="window.location.href='https://www.nutricao.com.br'">Auxiliares de Academia</button>
+    <!-- New Arrivals -->
+    <section class="section new-arrival">
+      <div class="title">
+        <h1>NOVAS CHEGADAS</h1>
+        <p>All the latest picked from designer of our store</p>
+      </div>
+
+      <div class="product-center">
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="./images/product-1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>ROUPAS MASCULINAS</span>
+            <a href="productDetails.html">Camiseta Térmica</a>
+            <h4>$700</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-3.jpg" alt="" />
+            </a>
+            <span class="discount">50%</span>
+          </div>
+
+          <div class="product-info">
+            <span>ROUPAS MASCULINAS</span>
+            <a href="">Sonata White Men’s Shirt</a>
+            <h4>$800</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-2.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>ROUPAS MASCULINAS</span>
+            <a href="">Concepts Solid Pink Men’s Polo</a>
+            <h4>$150</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-4.jpg" alt="" />
+            </a>
+            <span class="discount">50%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Edor do eiusmod tempor</a>
+            <h4>$900</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-5.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Edor do eiusmod tempor</a>
+            <h4>$100</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-6.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Edor do eiusmod tempor</a>
+            <h4>$500</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-7.jpg" alt="" />
+            </a>
+            <span class="discount">50%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Edor do eiusmod tempor</a>
+            <h4>$200</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-2.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Edor do eiusmod tempor</a>
+            <h4>$560</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Promo -->
+
+    <section class="section banner">
+<div class="left">
+  <span class="trend">DESIGN DO MOMENTO</span>
+  <h1>COLEÇÃO</h1>
+  <p>New Arrival <span class="color"> 50% OFF</span>POR TEMPO LIMITADO</p>
+  <a href="#" class="btn btn-1">Discover Now</a>
+</div>
+<div class="right">
+  <img src="./images/banner.png" alt="">
+</div>
+    </section>
+
+
+
+
+    <!-- Featured -->
+  
+    <section class="section new-arrival">
+      <div class="title">
+        <h1>Featured</h1>
+        <p>All the latest picked from designer of our store</p>
+      </div>
+
+      <div class="product-center">
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-7.jpg" alt="" />
+            </a>
+            <span class="discount">50%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Quis Nostrud Exercitation</a>
+            <h4>$700</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-4.jpg" alt="" />
+            </a>
+          </div>
+
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Sonata White Men’s Shirt</a>
+            <h4>$800</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-1.jpg" alt="" />
+            </a>
+            <span class="discount">40%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Concepts Solid Pink Men’s Polo</a>
+            <h4>$150</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-6.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Edor do eiusmod tempor</a>
+            <h4>$900</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact">
+      <div class="row">
+        <div class="col">
+          <h2>SUPORTE</h2>
+          <p>Nós amamos nossos clientes ,e faremos o maximo para responde-los 
+            o mais rápido possivel</p>
+          <a href="" class="btn btn-1">Contato</a>
+        </div>
+        <div class="col">
+          <form action="">
+            <div>
+              <input type="email" placeholder="Email Address">
+            <a href="">Envie</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col d-flex">
+          <h4>INFORMAÇÕES</h4>
+          <a href="">Sobre nós</a>
+          <a href="">Entre Em Contato</a>
+          <a href="">Termos & Condições</a>
+          <a href="">Guia</a>
+        </div>
+        <div class="col d-flex">
+          <h4>LINKS</h4>
+          <a href="">Loja Online</a>
+          <a href="">Serviços</a>
+          <a href="">Promoções</a>
+        </div>
+        <div class="col d-flex">
+          <span><i class='bx bxl-facebook-square'></i></span>
+          <span><i class='bx bxl-instagram-alt' ></i></span>
+          <span><i class='bx bxl-github' ></i></span>
+          <span><i class='bx bxl-twitter' ></i></span>
+          <span><i class='bx bxl-pinterest' ></i></span>
+        </div>
+      </div>
+    </footer>
+
+
+  <!-- PopUp -->
+  <div class="popup hide-popup">
+    <div class="popup-content">
+      <div class="popup-close">
+        <i class='bx bx-x'></i>
+      </div>
+      <div class="popup-left">
+        <div class="popup-img-container">
+          <img class="popup-img" src="./images/popup.jpg" alt="popup">
+        </div>
+      </div>
+      <div class="popup-right">
+        <div class="right-content">
+          <h1>Ganhe um Desconto de até <span>50%</span> Off</h1>
+          <p>Se cadastre e ganhe 30% de desconto na sua proxima compra.Sem pegadinhas,nós prometemos!
+          </p>
+          <form action="#">
+            <input type="email" placeholder="Enter your email..." class="popup-form">
+            <a href="#">Se Cadastre</a>
+          </form>
+        </div>
+      </div>
     </div>
-</body>
+  </div>
+
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/index.js"></script>
 </html>
+      
+     
+   
+         
+   
